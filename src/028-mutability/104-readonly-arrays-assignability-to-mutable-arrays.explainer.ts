@@ -1,13 +1,13 @@
 function printNamesReadonly(names: readonly string[]) {
-  for (const name of names) {
-    console.log(name);
-  }
+	for (const name of names) {
+		console.log(name);
+	}
 }
 
 function printNamesMutable(names: string[]) {
-  for (const name of names) {
-    console.log(name);
-  }
+	for (const name of names) {
+		console.log(name);
+	}
 }
 
 // Mutable arrays are assignable to readonly arrays

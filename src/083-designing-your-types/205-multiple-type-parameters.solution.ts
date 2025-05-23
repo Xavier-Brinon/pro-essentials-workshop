@@ -1,4 +1,4 @@
-import { Equal, Expect } from "@total-typescript/helpers";
+import type { Equal, Expect } from "@total-typescript/helpers";
 
 // CODE
 

@@ -1,9 +1,9 @@
 type ButtonAttributes = {
-  type: "button" | "submit" | "reset";
+	type: "button" | "submit" | "reset";
 };
 
 const type = "button";
 
 const buttonAttributes: ButtonAttributes = {
-  type,
+	type,
 };

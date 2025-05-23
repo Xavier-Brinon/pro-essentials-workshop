@@ -1,7 +1,7 @@
 const users = [
-  { id: "1", name: "Robin" },
-  { id: "2", name: "Dennis" },
-  { id: "3", name: "Sara" },
+	{ id: "1", name: "Robin" },
+	{ id: "2", name: "Dennis" },
+	{ id: "3", name: "Sara" },
 ];
 
 // Imagine this function was 10x bigger
@@ -9,5 +9,5 @@ const users = [
 
 // How do we change id to userId?
 const filterUsersById = (id: string) => {
-  return users.filter((user) => user.id === id);
+	return users.filter((user) => user.id === id);
 };

@@ -1,4 +1,4 @@
-import { Equal, Expect } from "@total-typescript/helpers";
+import type { Equal, Expect } from "@total-typescript/helpers";
 
 // 1
 
@@ -13,49 +13,49 @@ type test = Expect<Equal<typeof obj.a, number>>;
 // 2
 
 const menuConfig: Record<
-  string,
-  | {
-      label: string;
-      link: string;
-    }
-  | {
-      label: string;
-      children: {
-        label: string;
-        link: string;
-      }[];
-    }
+	string,
+	| {
+			label: string;
+			link: string;
+	  }
+	| {
+			label: string;
+			children: {
+				label: string;
+				link: string;
+			}[];
+	  }
 > = {
-  home: {
-    label: "Home",
-    link: "/home",
-  },
-  services: {
-    label: "Services",
-    children: [
-      {
-        label: "Consulting",
-        link: "/services/consulting",
-      },
-      {
-        label: "Development",
-        link: "/services/development",
-      },
-    ],
-  },
+	home: {
+		label: "Home",
+		link: "/home",
+	},
+	services: {
+		label: "Services",
+		children: [
+			{
+				label: "Consulting",
+				link: "/services/consulting",
+			},
+			{
+				label: "Development",
+				link: "/services/development",
+			},
+		],
+	},
 };
 
 type tests = [
-  Expect<Equal<typeof menuConfig.home.label, string>>,
-  Expect<
-    Equal<
-      typeof menuConfig.services.children,
-      {
-        label: string;
-        link: string;
-      }[]
-    >
-  >,
+	Expect<Equal<typeof menuConfig.home.label, string>>,
+	Expect<
+		Equal<
+			typeof menuConfig.services.children,
+			{
+				label: string;
+				link: string;
+			}[]
+		>
+	>,
 ];
 
 // 3

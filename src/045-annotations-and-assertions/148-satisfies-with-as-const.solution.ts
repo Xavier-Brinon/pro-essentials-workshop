@@ -1,25 +1,25 @@
-import { Equal, Expect } from "@total-typescript/helpers";
+import type { Equal, Expect } from "@total-typescript/helpers";
 
 const routes = {
-  "/": {
-    component: "Home",
-  },
-  "/about": {
-    component: "About",
-    // @ts-expect-error
-    search: "?foo=bar",
-  },
+	"/": {
+		component: "Home",
+	},
+	"/about": {
+		component: "About",
+		// @ts-expect-error
+		search: "?foo=bar",
+	},
 } as const satisfies Record<
-  string,
-  {
-    component: string;
-  }
+	string,
+	{
+		component: string;
+	}
 >;
 
 // @ts-expect-error
 routes["/"].component = "About";
 
 type tests = [
-  Expect<Equal<(typeof routes)["/"]["component"], "Home">>,
-  Expect<Equal<(typeof routes)["/about"]["component"], "About">>,
+	Expect<Equal<(typeof routes)["/"]["component"], "Home">>,
+	Expect<Equal<(typeof routes)["/about"]["component"], "About">>,
 ];

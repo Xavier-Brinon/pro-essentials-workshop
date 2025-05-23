@@ -1,5 +1,5 @@
 declare namespace NodeJS {
-  interface ProcessEnv {
-    MY_ENV_VAR: string;
-  }
+	interface ProcessEnv {
+		MY_ENV_VAR: string;
+	}
 }

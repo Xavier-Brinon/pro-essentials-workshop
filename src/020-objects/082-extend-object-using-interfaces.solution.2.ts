@@ -1,44 +1,44 @@
-import { Extends, Expect } from "@total-typescript/helpers";
+import type { Expect, Extends } from "@total-typescript/helpers";
 
 interface WithId {
-  id: string;
+	id: string;
 }
 
 interface WithCreatedAt {
-  createdAt: Date;
+	createdAt: Date;
 }
 
 interface User extends WithId, WithCreatedAt {
-  name: string;
-  email: string;
+	name: string;
+	email: string;
 }
 
 interface Product extends WithId, WithCreatedAt {
-  name: string;
-  price: number;
+	name: string;
+	price: number;
 }
 
 type tests = [
-  Expect<
-    Extends<
-      {
-        id: string;
-        createdAt: Date;
-        name: string;
-        email: string;
-      },
-      User
-    >
-  >,
-  Expect<
-    Extends<
-      {
-        id: string;
-        createdAt: Date;
-        name: string;
-        price: number;
-      },
-      Product
-    >
-  >,
+	Expect<
+		Extends<
+			{
+				id: string;
+				createdAt: Date;
+				name: string;
+				email: string;
+			},
+			User
+		>
+	>,
+	Expect<
+		Extends<
+			{
+				id: string;
+				createdAt: Date;
+				name: string;
+				price: number;
+			},
+			Product
+		>
+	>,
 ];

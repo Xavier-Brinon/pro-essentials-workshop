@@ -1,4 +1,4 @@
-import { Equal, Expect } from "@total-typescript/helpers";
+import type { Equal, Expect } from "@total-typescript/helpers";
 
 import Diff from "diff";
 
@@ -9,13 +9,13 @@ const secondMessage = "Goodbye, world!";
 const diff = Diff.diffChars(message, secondMessage);
 
 type test = Expect<
-  Equal<
-    typeof diff,
-    {
-      count?: number;
-      value: string;
-      added?: boolean;
-      removed?: boolean;
-    }[]
-  >
+	Equal<
+		typeof diff,
+		{
+			count?: number;
+			value: string;
+			added?: boolean;
+			removed?: boolean;
+		}[]
+	>
 >;

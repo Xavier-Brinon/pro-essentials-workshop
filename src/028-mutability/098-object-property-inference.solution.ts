@@ -1,11 +1,11 @@
 type ButtonAttributes = {
-  type: "button" | "submit" | "reset";
+	type: "button" | "submit" | "reset";
 };
 
 const modifyButton = (attributes: ButtonAttributes) => {};
 
 const buttonAttributes: ButtonAttributes = {
-  type: "button",
+	type: "button",
 };
 
 modifyButton(buttonAttributes);
@@ -15,12 +15,12 @@ modifyButton(buttonAttributes);
 const modifyButtons = (attributes: ButtonAttributes[]) => {};
 
 const buttonsToChange: ButtonAttributes[] = [
-  {
-    type: "button",
-  },
-  {
-    type: "submit",
-  },
+	{
+		type: "button",
+	},
+	{
+		type: "submit",
+	},
 ];
 
 modifyButtons(buttonsToChange);

@@ -1,5 +1,5 @@
-let example1 = "Hello World!";
-let example2 = 42;
-let example3 = true;
-let example4 = Symbol();
-let example5 = 123n;
+const example1 = "Hello World!";
+const example2 = 42;
+const example3 = true;
+const example4 = Symbol();
+const example5 = 123n;

@@ -1,3 +1,3 @@
 declare module "my-module" {
-  export const myModuleFunc: () => void;
+	export const myModuleFunc: () => void;
 }

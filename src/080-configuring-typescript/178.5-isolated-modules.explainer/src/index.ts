@@ -1,7 +1,7 @@
-declare const enum Numbers {
-  Zero,
-  One,
-  Two,
+declare enum Numbers {
+	Zero,
+	One,
+	Two,
 }
 
 const example = Numbers.Zero;

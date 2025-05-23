@@ -1,5 +1,5 @@
-import { Equal, Expect } from "@total-typescript/helpers";
+import type { Equal, Expect } from "@total-typescript/helpers";
 
-import { myModuleFunc } from "my-module";
+import type { myModuleFunc } from "my-module";
 
 type test = Expect<Equal<typeof myModuleFunc, () => void>>;

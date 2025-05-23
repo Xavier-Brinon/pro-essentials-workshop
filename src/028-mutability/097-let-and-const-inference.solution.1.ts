@@ -1,11 +1,11 @@
 type ButtonType = "button" | "submit" | "reset";
 
 type ButtonAttributes = {
-  type: ButtonType;
+	type: ButtonType;
 };
 
-let type: ButtonType = "button";
+const type: ButtonType = "button";
 
 const buttonAttributes: ButtonAttributes = {
-  type,
+	type,
 };

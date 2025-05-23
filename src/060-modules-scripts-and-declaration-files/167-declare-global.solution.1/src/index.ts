@@ -1,9 +1,9 @@
-import { Equal, Expect } from "@total-typescript/helpers";
+import type { Equal, Expect } from "@total-typescript/helpers";
 
 declare global {
-  const DEBUG: {
-    getState(): { id: string };
-  };
+	const DEBUG: {
+		getState(): { id: string };
+	};
 }
 
 const state = DEBUG.getState();

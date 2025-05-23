@@ -1,5 +1,5 @@
 const shoppingCart = {
-  items: [],
+	items: [],
 };
 
 console.log(shoppingCart.items);

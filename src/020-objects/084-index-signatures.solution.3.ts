@@ -1,5 +1,5 @@
 const scores: {
-  [key: string]: number;
+	[key: string]: number;
 } = {};
 
 scores.math = 95;

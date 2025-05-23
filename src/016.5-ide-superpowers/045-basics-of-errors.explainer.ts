@@ -16,11 +16,11 @@ obj.foo = "hello";
 // the source of the problem as possible
 
 type MyUser = {
-  name: string;
+	name: string;
 };
 
 const user: MyUser = {
-  nme: "Katherine",
+	nme: "Katherine",
 };
 
 // But sometimes that's not always possible
@@ -28,5 +28,5 @@ const user: MyUser = {
 type FunctionThatReturnsAString = () => string;
 
 const fn: FunctionThatReturnsAString = () => {
-  return 123;
+	return 123;
 };

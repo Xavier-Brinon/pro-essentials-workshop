@@ -1,7 +1,7 @@
 type User = {
-  id: number;
-  name: string;
-  email: string;
+	id: number;
+	name: string;
+	email: string;
 };
 
 // You can omit properties which don't exist!

@@ -1,12 +1,12 @@
-let thing = 123;
+const thing = 123;
 
-let otherThing = {
-  name: "Alice",
+const otherThing = {
+	name: "Alice",
 };
 
 const otherObject = {
-  ...otherThing,
-  thing,
+	...otherThing,
+	thing,
 };
 
 otherObject.thing;

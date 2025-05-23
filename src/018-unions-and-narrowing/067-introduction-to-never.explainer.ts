@@ -1,6 +1,6 @@
 // This function returns never, because it never returns!
 const getNever = () => {
-  throw new Error("This function never returns");
+	throw new Error("This function never returns");
 };
 
 // ---------------------------------------------

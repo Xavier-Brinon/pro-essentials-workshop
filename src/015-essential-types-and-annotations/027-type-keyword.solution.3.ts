@@ -1,4 +1,4 @@
 export type Rectangle = {
-  width: number;
-  height: number;
+	width: number;
+	height: number;
 };

@@ -1,3 +1,3 @@
 declare const DEBUG: {
-  getState(): { id: string };
+	getState(): { id: string };
 };

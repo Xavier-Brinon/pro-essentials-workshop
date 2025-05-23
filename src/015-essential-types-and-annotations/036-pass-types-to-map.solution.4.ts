@@ -1,6 +1,6 @@
 type User = {
-  name: string;
-  age: number;
+	name: string;
+	age: number;
 };
 
 const userMap: Map<number, User> = new Map();

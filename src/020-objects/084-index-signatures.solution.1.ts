@@ -1,5 +1,5 @@
 type Scores = {
-  [key: string]: number;
+	[key: string]: number;
 };
 
 const scores: Scores = {};

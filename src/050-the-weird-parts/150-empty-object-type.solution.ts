@@ -11,10 +11,10 @@ acceptAnythingExceptNullOrUndefined(/foo/);
 acceptAnythingExceptNullOrUndefined(new Error("foo"));
 
 acceptAnythingExceptNullOrUndefined(
-  // @ts-expect-error
-  null,
+	// @ts-expect-error
+	null,
 );
 acceptAnythingExceptNullOrUndefined(
-  // @ts-expect-error
-  undefined,
+	// @ts-expect-error
+	undefined,
 );

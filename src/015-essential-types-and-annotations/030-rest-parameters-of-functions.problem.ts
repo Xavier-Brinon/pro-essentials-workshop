@@ -1,13 +1,13 @@
-import { Expect, Equal } from "@total-typescript/helpers";
+import type { Equal, Expect } from "@total-typescript/helpers";
 import { expect, it } from "vitest";
 
 export function concatenate(...strings) {
-  return strings.join("");
+	return strings.join("");
 }
 
 it("should concatenate strings", () => {
-  const result = concatenate("Hello", " ", "World");
-  expect(result).toEqual("Hello World");
+	const result = concatenate("Hello", " ", "World");
+	expect(result).toEqual("Hello World");
 
-  type test = Expect<Equal<typeof result, string>>;
+	type test = Expect<Equal<typeof result, string>>;
 });

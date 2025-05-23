@@ -1,3 +1,3 @@
 declare module "zod" {
-  const z: any;
+	const z: any;
 }

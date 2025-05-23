@@ -1,9 +1,9 @@
 type ShoppingCart = {
-  items: string[];
+	items: string[];
 };
 
 const shoppingCart: ShoppingCart = {
-  items: [],
+	items: [],
 };
 
 console.log(shoppingCart.items);

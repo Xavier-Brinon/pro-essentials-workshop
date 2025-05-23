@@ -1,8 +1,8 @@
-import { Equal, Expect } from "@total-typescript/helpers";
+import type { Equal, Expect } from "@total-typescript/helpers";
 
 type Coordinates = {
-  x?: number;
-  y?: number;
+	x?: number;
+	y?: number;
 };
 
 type CoordinatesRequired = Required<Coordinates>;

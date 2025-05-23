@@ -7,9 +7,9 @@ str.replaceAll("Hello", "Goodbye");
 // Syntax IS transformed:
 
 const myFunc = (input?: { search?: string }) => {
-  // Optional chaining
-  const search = input?.search;
+	// Optional chaining
+	const search = input?.search;
 
-  // Nullish coalescing
-  const defaultedSearch = search ?? "Hello";
+	// Nullish coalescing
+	const defaultedSearch = search ?? "Hello";
 };

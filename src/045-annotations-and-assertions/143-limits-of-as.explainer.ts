@@ -13,11 +13,11 @@ const num4 = "hello" as never as number;
 // have 'sufficient overlap'
 
 interface Dog {
-  bark(): void;
+	bark(): void;
 }
 
 const cat = {
-  meow() {},
+	meow() {},
 };
 
 const dog1 = cat as Dog;

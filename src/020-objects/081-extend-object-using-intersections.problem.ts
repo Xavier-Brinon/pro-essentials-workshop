@@ -1,40 +1,40 @@
-import { Extends, Expect } from "@total-typescript/helpers";
+import type { Expect, Extends } from "@total-typescript/helpers";
 
 type User = {
-  id: string;
-  createdAt: Date;
-  name: string;
-  email: string;
+	id: string;
+	createdAt: Date;
+	name: string;
+	email: string;
 };
 
 type Product = {
-  id: string;
-  createdAt: Date;
-  name: string;
-  price: number;
+	id: string;
+	createdAt: Date;
+	name: string;
+	price: number;
 };
 
 type tests = [
-  Expect<
-    Extends<
-      {
-        id: string;
-        createdAt: Date;
-        name: string;
-        email: string;
-      },
-      User
-    >
-  >,
-  Expect<
-    Extends<
-      {
-        id: string;
-        createdAt: Date;
-        name: string;
-        price: number;
-      },
-      Product
-    >
-  >,
+	Expect<
+		Extends<
+			{
+				id: string;
+				createdAt: Date;
+				name: string;
+				email: string;
+			},
+			User
+		>
+	>,
+	Expect<
+		Extends<
+			{
+				id: string;
+				createdAt: Date;
+				name: string;
+				price: number;
+			},
+			Product
+		>
+	>,
 ];

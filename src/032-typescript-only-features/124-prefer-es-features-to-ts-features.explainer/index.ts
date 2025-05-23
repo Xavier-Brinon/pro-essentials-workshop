@@ -2,19 +2,19 @@
 // but it's not as predictable as just using
 // ES features directly.
 enum Direction {
-  Up,
-  Down,
-  Left,
-  Right,
+	Up = 0,
+	Down = 1,
+	Left = 2,
+	Right = 3,
 }
 
 namespace MathUtils {
-  export const PI = 3.14;
-  export const E = 2.71;
+	export const PI = 3.14;
+	export const E = 2.71;
 }
 
 class MyClass {
-  constructor(private myPrivateProp: number) {}
+	constructor(private myPrivateProp: number) {}
 }
 
 // Open enum bugs:

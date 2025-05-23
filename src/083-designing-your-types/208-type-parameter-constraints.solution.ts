@@ -1,17 +1,17 @@
 type Result<TResult, TError extends { message: string } = Error> =
-  | {
-      success: true;
-      data: TResult;
-    }
-  | {
-      success: false;
-      error: TError;
-    };
+	| {
+			success: true;
+			data: TResult;
+	  }
+	| {
+			success: false;
+			error: TError;
+	  };
 
 type BadExample = Result<
-  { id: string },
-  // @ts-expect-error Should be an object with a message property
-  string
+	{ id: string },
+	// @ts-expect-error Should be an object with a message property
+	string
 >;
 
 type GoodExample = Result<{ id: string }, TypeError>;

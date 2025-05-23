@@ -1,7 +1,7 @@
 // You can use go to definition to jump to the definition of something
 
 const myFunction = () => {
-  console.log("Hello!");
+	console.log("Hello!");
 };
 
 myFunction();

@@ -2,5 +2,5 @@
 // We want to prevent it from emitting .js files into ./dist.
 
 export const myFunc = () => {
-  console.log("Hello!");
+	console.log("Hello!");
 };

@@ -1,24 +1,24 @@
-import { Equal, Expect } from "@total-typescript/helpers";
+import type { Equal, Expect } from "@total-typescript/helpers";
 
 interface Attributes {
-  firstName: string;
-  lastName: string;
-  age: number;
+	firstName: string;
+	lastName: string;
+	age: number;
 }
 
 type AttributeGetters = {
-  [K in keyof Attributes]: () => Attributes[K];
+	[K in keyof Attributes]: () => Attributes[K];
 };
 
 type tests = [
-  Expect<
-    Equal<
-      AttributeGetters,
-      {
-        firstName: () => string;
-        lastName: () => string;
-        age: () => number;
-      }
-    >
-  >,
+	Expect<
+		Equal<
+			AttributeGetters,
+			{
+				firstName: () => string;
+				lastName: () => string;
+				age: () => number;
+			}
+		>
+	>,
 ];

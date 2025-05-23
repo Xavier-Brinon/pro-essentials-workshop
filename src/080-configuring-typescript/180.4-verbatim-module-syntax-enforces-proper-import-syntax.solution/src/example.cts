@@ -1,11 +1,11 @@
 // Fake ESM!
 
 const example = () => {
-  return "hello!";
+	return "hello!";
 };
 
 // True CJS:
 
 export = {
-  example,
+	example,
 };

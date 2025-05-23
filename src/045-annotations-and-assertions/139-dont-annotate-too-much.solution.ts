@@ -1,51 +1,51 @@
-import { Equal, Expect } from "@total-typescript/helpers";
+import type { Equal, Expect } from "@total-typescript/helpers";
 
 // CODE
 
 const isProblemOrSolution = (filename: string) => {
-  const splitFilename = filename.split(".");
+	const splitFilename = filename.split(".");
 
-  const finalIndex = splitFilename.length - 1;
+	const finalIndex = splitFilename.length - 1;
 
-  const extension = splitFilename[finalIndex];
+	const extension = splitFilename[finalIndex];
 
-  const isProblem = extension === "problem";
+	const isProblem = extension === "problem";
 
-  const isSolution = extension === "solution";
+	const isSolution = extension === "solution";
 
-  return isProblem || isSolution;
+	return isProblem || isSolution;
 };
 
 // TESTS
 
 type test1 = Expect<
-  Equal<typeof isProblemOrSolution, (filename: string) => boolean>
+	Equal<typeof isProblemOrSolution, (filename: string) => boolean>
 >;
 
 // CODE
 
 const users = [
-  {
-    name: "Waqas",
-  },
-  {
-    name: "Zain",
-  },
+	{
+		name: "Waqas",
+	},
+	{
+		name: "Zain",
+	},
 ];
 
 const usersWithIds = users.map((user, index) => ({
-  ...user,
-  id: index,
+	...user,
+	id: index,
 }));
 
 // TESTS
 
 type test2 = Expect<
-  Equal<
-    typeof usersWithIds,
-    {
-      id: number;
-      name: string;
-    }[]
-  >
+	Equal<
+		typeof usersWithIds,
+		{
+			id: number;
+			name: string;
+		}[]
+	>
 >;
