@@ -3,11 +3,16 @@
 	"vcs": {
 		"enabled": false,
 		"clientKind": "git",
-		"useIgnoreFile": false
+		"useIgnoreFile": true
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": ["node_modules", "course", "dist", "build", "public", ".output", ".vinxi", "routeTree.gen.ts"]
+		"ignore": [
+			"course",
+			"routeTree.gen.ts",
+			"CHANGELOG.md",
+			".github"
+		]
 	},
 	"formatter": {
 		"enabled": true,
