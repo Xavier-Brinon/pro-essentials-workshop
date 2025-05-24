@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"build": "vinxi build",
+		"build": "check && vinxi build",
 		"check": "biome check --write .",
 		"dev": "vinxi dev",
 		"start": "vinxi start",
