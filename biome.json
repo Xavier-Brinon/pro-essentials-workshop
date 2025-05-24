@@ -7,11 +7,13 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": []
+		"ignore": ["node_modules", "dist", "build", "public", ".output", "routeTree.gen.ts"]
 	},
 	"formatter": {
 		"enabled": true,
-		"indentStyle": "tab"
+		"indentStyle": "tab",
+		"lineWidth": 120,
+		"indentWidth": 1
 	},
 	"organizeImports": {
 		"enabled": true
@@ -24,7 +26,11 @@
 	},
 	"javascript": {
 		"formatter": {
-			"quoteStyle": "double"
+			"quoteStyle": "single",
+			"lineWidth": 120,
+			"indentWidth": 1,
+			"indentStyle": "tab",
+			"semicolons": "asNeeded"
 		}
 	}
 }
