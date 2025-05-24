@@ -5,6 +5,9 @@
 	"author": "Matt Pocock <team@totaltypescript.com>",
 	"license": "GPL",
 	"type": "module",
+	"workspaces": [
+		"packages/*"
+	],
 	"scripts": {
 		"exercise": "tt-cli run",
 		"e": "npm run exercise",
