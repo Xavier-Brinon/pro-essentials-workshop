@@ -3,15 +3,20 @@
 	"vcs": {
 		"enabled": false,
 		"clientKind": "git",
-		"useIgnoreFile": true
+		"useIgnoreFile": false
 	},
 	"files": {
 		"ignoreUnknown": false,
 		"ignore": [
+			"node_modules",
+			"package-lock.json",
+			".output",
 			"course",
 			"routeTree.gen.ts",
 			"CHANGELOG.md",
-			".github"
+			".github",
+			".vinxi",
+			".vscode"
 		]
 	},
 	"formatter": {
