@@ -7,7 +7,17 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": ["node_modules", "dist", "build", "public", ".output", "routeTree.gen.ts"]
+		"ignore": [
+			"node_modules",
+			"package-lock.json",
+			".output",
+			"course",
+			"routeTree.gen.ts",
+			"CHANGELOG.md",
+			".github",
+			".vinxi",
+			".vscode"
+		]
 	},
 	"formatter": {
 		"enabled": true,
